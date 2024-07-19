@@ -1,0 +1,194 @@
+/* Popup.css */
+.popup-container {
+    position: absolute; 
+    top: calc(100% + 10px); /* Adjust the distance from the button as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 1000px; /* Adjust the width as needed */
+    
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Add scrollbar when content exceeds container height */
+    height:600px;
+    max-height: 1000px;
+    
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  .input-set-container{
+    width: 95%;
+    padding: 4px;
+    
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  
+  .form-group input,
+  .form-group select {
+    width: 95%;
+    padding: 4px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  .btn-container {
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+  }
+  .btn{
+    flex: 1;
+    margin: 0 10px;
+    
+    font-size: 12px; /* Decrease font size */
+    padding: 6px 12px; /* Decrease padding */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #007bff; /* Blue background color */
+    color: #ffffff; /* White text color */
+    border: none; /* No border */
+    cursor: pointer; /* Cursor on hover */
+    transition: background-color 0.3s ease; 
+  }
+  .btn:hover {
+    background-color: #0056b3; /* Darker blue background on hover */
+  }
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #aaa;
+  }
+  .input-field{
+    width: calc(33.33% - 5px);
+    /* margin-right: 10px;
+     */
+     
+  }
+  .input-field1{
+    width: calc(33.33% - 5px);
+    margin-right: 5px;
+    /* margin-left: 5px; */
+    
+  }
+  
+  .form-container {
+    flex: 1; /* Allow the form to grow and shrink within the container */
+    overflow-y: auto; /* Add scrollbar when content exceeds container height */
+  }
+  
+  .label {
+    width: 50%;
+    margin-right: 10px;
+  }
+  .suggestion-list2 {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    /* Adjust the width as needed */
+    max-width: 800px;
+    max-height: 200px; /* Adjust the max-height as needed */
+    overflow-y: auto;
+    background-color: red;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .suggestion-list2 li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .suggestion-list2 li:hover {
+    background-color: #f0f0f0;
+  }
+  .remove-btn {
+    background-color: grey; /* Red background */
+    color: #ffffff; /* White text */
+    border: none; /* No border */
+    padding: 4px 12px; /* Decreased padding */
+    margin-top: 35px; /* Margin */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 18px; /* Decreased font size */
+  }
+  
+  .remove-btn:hover {
+    background-color: #cc0000; /* Darker red background on hover */
+  }
+  
+  
+@media (max-width: 1000px) {
+  .popup-container {
+    padding: 8px;
+    width: 60%;
+ /* Change position to relative */
+    top:150px;
+    z-index:10000;
+    
+  }
+  .form-group{
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+  }
+  .input-set-container {
+    margin-bottom: 10px;
+   
+  }
+  .form-group input,
+    .form-group select {
+        margin-top: 5px; /* Add some space between label and input */
+        width: 100%;
+    }
+    .suggestion-list2 {
+      position: absolute;
+      top: calc(100% + 1px);
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+    }
+    .remove-btn {
+      background-color: grey; /* Red background */
+      color: #ffffff; /* White text */
+      border: none; /* No border */
+      padding: 4px 12px; /* Decreased padding */
+      margin-top: 20px; /* Margin */
+      margin-bottom: 20px;
+      cursor: pointer; /* Cursor on hover */
+      border-radius: 4px; /* Rounded corners */
+      font-size: 18px; /* Decreased font size */
+    }
+    
+
+    
+}
